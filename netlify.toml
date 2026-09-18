@@ -1,0 +1,11 @@
+[build]
+  command = "cd frontend && yarn install --frozen-lockfile && yarn build"
+  publish = "frontend/build"
+
+[build.environment]
+  CI = "false"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

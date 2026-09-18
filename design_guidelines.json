@@ -1,0 +1,114 @@
+{
+  "project_title": "Aurélio — IA Mentora & Terapeuta de Amadurecimento",
+  "app_type": "saas_app",
+  "language": "pt-BR",
+  "design_archetype": "ORGANIC_STOIC_LUXURY",
+  "theme_strategy": {
+    "default_mode": "dark",
+    "supported_modes": ["dark", "light"],
+    "description": "Uma estética editorial inspirada em bibliotecas filosóficas, estátuas clássicas e tons de pedra/terracota. O tom escuro evoca o santuário da reflexão, enquanto o modo claro (pergaminho) oferece legibilidade estilo livro antigo."
+  },
+  "typography": {
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+    "heading_font": "'Cormorant Garamond', Georgia, serif",
+    "body_font": "'Manrope', -apple-system, sans-serif",
+    "mono_font": "'JetBrains Mono', monospace",
+    "font_rules": {
+      "headings": "Usar Cormorant Garamond para títulos principais e reflexões. NUNCA usar Inter ou Helvetica em headings.",
+      "subtitles_labels": "Caixa alta, rastreamento amplo (tracking-wider), tamanho pequeno (text-xs ou text-sm), fonte Manrope em tom bronze.",
+      "body": "Manrope para legibilidade perfeita no chat e formulários.",
+      "max_heading_size": "text-4xl sm:text-5xl lg:text-6xl"
+    }
+  },
+  "colors": {
+    "dark_mode": {
+      "bg_main": "#0f0e0d",
+      "bg_surface": "#181614",
+      "bg_card": "#221f1d",
+      "bg_overlay": "rgba(15, 14, 13, 0.85)",
+      "border": "#332f2b",
+      "border_accent": "#c97a3e",
+      "text_primary": "#f2ede4",
+      "text_secondary": "#bab0a3",
+      "text_muted": "#857c72",
+      "accent_terracotta": "#c97a3e",
+      "accent_amber": "#dfa262",
+      "accent_bronze": "#8c562b",
+      "user_bubble": "#2a2622",
+      "aurelio_bubble": "#1c1a17"
+    },
+    "light_mode": {
+      "bg_main": "#f6f4ee",
+      "bg_surface": "#ede8dd",
+      "bg_card": "#e3dccf",
+      "bg_overlay": "rgba(246, 244, 238, 0.85)",
+      "border": "#d4cbd0",
+      "border_accent": "#9e5320",
+      "text_primary": "#1f1c19",
+      "text_secondary": "#4a443e",
+      "text_muted": "#756d64",
+      "accent_terracotta": "#a85018",
+      "accent_amber": "#b8732a",
+      "user_bubble": "#e4ddd0",
+      "aurelio_bubble": "#eee9dd"
+    },
+    "forbidden_colors": ["#7351B7", "#1B93A4", "#00FFFF", "neon blue"]
+  },
+  "image_urls": {
+    "aurelio_portrait": {
+      "url": "https://images.unsplash.com/photo-1601887389937-0b02c26b602c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxzdG9pYyUyMG1hcmJsZSUyMHN0YXR1ZSUyMHBvcnRyYWl0JTIwY2xhc3NpYyUyMHNjdWxwdHVyZXxlbnwwfHx8fDE3ODk0NjEyNDF8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Busto clássico de estátua de mármore estóica representando Aurélio",
+      "usage": "Avatar do Aurélio, Landing Page Hero e Modal de Perfil do Mentor"
+    },
+    "classic_statue_2": {
+      "url": "https://images.unsplash.com/photo-1548811579-017cf2a4268b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwyfHxzdG9pYyUyMG1hcmJsZSUyMHN0YXR1ZSUyMHBvcnRyYWl0JTIwY2xhc3NpYyUyMHNjdWxwdHVyZXxlbnwwfHx8fDE3ODk0NjEyNDF8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Estátua romana clássica em ambiente sóbrio",
+      "usage": "Seção do Manifesto do Amadurecimento na Landing Page"
+    },
+    "study_library": {
+      "url": "https://images.unsplash.com/photo-1728506972831-193841eb2961?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwyfHxjb3p5JTIwZGFyayUyMGxpYnJhcnklMjB2aW50YWdlJTIwbGVhdGhlciUyMGFybWNoYWlyJTIwYm9va3N8ZW58MHx8fHwxNzg5NDYxMjQ5fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Gabinete clássico com estantes de livros antigos e iluminação aconchegante",
+      "usage": "Fundo sutil na Onboarding / Banner do painel de reflexão diária"
+    }
+  },
+  "key_features_and_components": {
+    "auth_system": "Modal/Página de Login e Cadastro com campos estilizados, validação e opção de 'Entrar como Convidado' para testar imediatamente.",
+    "landing_and_onboarding": "Página inicial com o manifesto 'A Verdade Sem Filtros', amostra da voz máscula de Aurélio (botão áudio demo), cards de pilares do amadurecimento (Responsabilidade, Aceitação, Ação, Autocontrole) e CTA para iniciar conversa.",
+    "chat_workspace": {
+      "sidebar": "Menu lateral retrátil (responsivo no mobile com drawer) contendo conversas salvas filtradas por temas (ex: 'Medos & Ação', 'Disciplina Diária', 'Relacionamentos Adultos', 'Carreira & Propósito'), botão 'Nova Conversa' e perfil do usuário.",
+      "message_feed": "Feed estilo leitor editorial (comprimento máximo 768px), mensagens do usuário à direita/alinhadas, mensagens de Aurélio com título distintivo, opção de copiar, reagir e ouvir o áudio.",
+      "tts_audio_playback": "Sintetizador de voz máscula e madura (usando Web Speech API com afinação e velocidade ajustadas para tom grave/sério, além de feedback visual de fala com ondas sonoras ativas).",
+      "composer": "Barra de envio fixa na parte inferior com área de texto expansível, atalhos para sugestões de tópicos profundos ('O que estou evitando encarar hoje?', 'Como parar de me vitimizar?')."
+    },
+    "journal_artifact_drawer": "Painel lateral deslizante para anotações pessoais do usuário e citações diárias extraídas da conversa com Aurélio."
+  },
+  "data_testid_requirements": [
+    "landing-hero-cta",
+    "landing-voice-demo-button",
+    "auth-login-email-input",
+    "auth-login-password-input",
+    "auth-login-submit-button",
+    "auth-register-name-input",
+    "auth-register-email-input",
+    "auth-register-password-input",
+    "auth-register-submit-button",
+    "chat-sidebar-toggle",
+    "chat-new-conversation-button",
+    "chat-history-item",
+    "chat-input-textarea",
+    "chat-send-button",
+    "chat-voice-input-button",
+    "aurelio-message-card",
+    "aurelio-tts-play-button",
+    "theme-toggle-button",
+    "journal-drawer-toggle"
+  ],
+  "instructions_to_main_agent": [
+    "Utilizar Javascript (.js) e componentes React nas pastas corretas do projeto.",
+    "Garantir suporte completo a dispositivos móveis com drawer no sidebar de conversas e botão de atalho flutuante.",
+    "Implementar o reprodutor de síntese de voz (TTS) em cada resposta do Aurélio usando `window.speechSynthesis` configurado com pitch e rate mais graves para transmitir a voz máscula e pausada.",
+    "Incluir respostas pré-configuradas e inteligentes do Aurélio sobre temas reais de amadurecimento (ex: disciplina, vitimização, propósito, relacionamentos, estoicismo prático).",
+    "Incluir persistência local (localStorage) das conversas para que o usuário veja seus chats salvos mesmo se recarregar a página.",
+    "Adicionar data-testid em TODOS os botões, formulários e itens interativos especificados em data_testid_requirements."
+  ]
+}
